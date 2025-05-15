@@ -49,7 +49,8 @@ function startCountdown() {
       startBtnElement.innerText = "Start Countdown";
       startBtnElement.style.backgroundColor = "red";
 
-    
+    showToast();
+      
     }
   }, 1000);
 }
@@ -61,6 +62,12 @@ function showToast(message) {
 
   // Your code goes here ...
 
+  const toast = document.getElementById("toast");
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
 }
 
 
