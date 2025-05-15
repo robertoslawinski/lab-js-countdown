@@ -49,8 +49,7 @@ function startCountdown() {
       startBtnElement.innerText = "Start Countdown";
       startBtnElement.style.backgroundColor = "red";
 
-    showToast();
-      
+    
     }
   }, 1000);
 }
